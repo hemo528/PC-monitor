@@ -1,4 +1,4 @@
-﻿# GPU Monitor
+﻿# PC Monitor
 
 Real-time CPU / Memory / GPU performance monitoring tool with collector-display architecture. The **collector** runs on the target Windows machine, the **display** connects remotely over TCP to visualize live data.
 
@@ -33,8 +33,8 @@ Pre-built binaries are available in the [Releases](../../releases) page:
 
 | File | Description |
 |------|-------------|
-| `GPU-Monitor-v1.0.zip` | Windows collector + display (`collector.exe` + `display.exe`) |
-| `GPU-Monitor-Android-v1.0.apk` | Android display app |
+| `PC-Monitor-v1.0.zip` | Windows collector + display (`collector.exe` + `display.exe`) |
+| `PC-Monitor-Android-v1.0.apk` | Android display app |
 
 ## Build from Source
 

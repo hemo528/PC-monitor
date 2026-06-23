@@ -28,7 +28,7 @@ fn main() -> Result<()> {
         .and_then(|s| s.parse().ok())
         .unwrap_or(DEFAULT_PORT);
 
-    info!("GPU Monitor Collector starting...");
+    info!("PC Monitor Collector starting...");
 
     let mut system = System::new_with_specifics(
         RefreshKind::new()

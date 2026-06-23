@@ -37,7 +37,7 @@ class _ConnectionScreenState extends State<ConnectionScreen> {
           children: [
             Icon(Icons.monitor_heart_rounded, color: t.titleColor, size: 64),
             const SizedBox(height: 12),
-            Text('GPU Monitor', style: TextStyle(color: t.titleColor, fontSize: 36, fontWeight: FontWeight.bold)),
+            Text('PC Monitor', style: TextStyle(color: t.titleColor, fontSize: 36, fontWeight: FontWeight.bold)),
             const SizedBox(height: 6),
             Text('Enter collector address', style: TextStyle(color: t.textColor, fontSize: 16)),
             const SizedBox(height: 24),

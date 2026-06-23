@@ -11,7 +11,7 @@ mod shared;
 
 use shared::SystemData;
 
-const CONFIG_FILE: &str = "gpu_monitor_display.json";
+const CONFIG_FILE: &str = "pc_monitor_display.json";
 
 fn main() -> iced::Result {
     tracing_subscriber::fmt()
@@ -139,7 +139,7 @@ impl Application for MonitorApp {
             AppState::Connected { .. } => "Live",
             AppState::Disconnected { .. } => "Disconnected",
         };
-        format!("GPU Monitor [{}]", status)
+        format!("PC Monitor [{}]", status)
     }
 
     fn update(&mut self, message: Message) -> Command<Message> {

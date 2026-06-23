@@ -12,6 +12,6 @@ void main() {
       ),
     );
     await tester.pumpAndSettle();
-    expect(find.text('GPU Monitor'), findsOneWidget);
+    expect(find.text('PC Monitor'), findsOneWidget);
   });
 }

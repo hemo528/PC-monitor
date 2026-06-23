@@ -1,6 +1,6 @@
-{
-    "name": "gpu_monitor_android",
-    "short_name": "gpu_monitor_android",
+﻿{
+    "name": "PC Monitor",
+    "short_name": "PC Monitor",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

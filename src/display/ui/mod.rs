@@ -11,7 +11,7 @@ use crate::Message;
 pub use styles::{AppStyle, create_styles};
 
 pub fn connection_view<'a>(ip: &str, error: Option<&str>, style: &AppStyle) -> Element<'a, Message> {
-    let title = text("GPU Monitor").size(48).style(style.title_color);
+    let title = text("PC Monitor").size(48).style(style.title_color);
     let subtitle = text("Enter collector address to connect").size(20).style(style.text_color);
 
     let ip_input = text_input("e.g. 192.168.1.100:9876 or 192.168.1.100", ip)

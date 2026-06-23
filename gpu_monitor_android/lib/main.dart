@@ -26,7 +26,7 @@ class GpuMonitorApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'GPU Monitor',
+      title: 'PC Monitor',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
       home: const MonitorHomePage(),
