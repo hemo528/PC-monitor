@@ -1,0 +1,33 @@
+﻿[package]
+name = "gpu-monitor"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "collector"
+path = "src/collector/main.rs"
+
+[[bin]]
+name = "display"
+path = "src/display/main.rs"
+
+[dependencies]
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "time", "sync"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+anyhow = "1"
+tracing = "0.1"
+tracing-subscriber = "0.3"
+
+# collector-only
+sysinfo = { version = "0.30", optional = true }
+chrono = { version = "0.4", optional = true }
+nvml-wrapper = { version = "0.10", optional = true }
+
+# display-only
+iced = { version = "0.12", features = ["canvas", "tokio"], optional = true }
+
+[features]
+default = ["collector", "display"]
+collector = ["dep:sysinfo", "dep:chrono", "dep:nvml-wrapper"]
+display = ["dep:iced"]

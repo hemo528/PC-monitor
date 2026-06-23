@@ -1,0 +1,44 @@
+﻿# Rust build artifacts
+/target/
+
+# Flutter build artifacts
+gpu_monitor_android/build/
+gpu_monitor_android/.dart_tool/
+gpu_monitor_android/.packages
+gpu_monitor_android/.flutter-plugins
+gpu_monitor_android/.flutter-plugins-dependencies
+gpu_monitor_android/pubspec.lock
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Runtime logs / temp files
+*.log
+*_log.txt
+*_out.txt
+*_err.txt
+build_log.txt
+collector_out.txt
+collector_err.txt
+display_log.txt
+shared_new.rs
+test_write.txt
+flutter_*.txt
+gpu_monitor_display.json
+
+# Pre-built releases (uploaded to GitHub Releases instead)
+*.apk
+*.zip
+
+# Gradle cache
+gpu_monitor_android/android/.gradle/
+gpu_monitor_android/android/local.properties
+gpu_monitor_android/android/gradle.properties
+# Temp server script
+gpu_monitor_android/serve.cjs
